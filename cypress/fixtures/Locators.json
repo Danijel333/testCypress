@@ -1,0 +1,21 @@
+{
+  "Login": {
+    "emailInput": "#email",
+    "passwordInput": "#password",
+    "submitBtn": "button[type='submit']"
+  },
+
+  "Register" : {
+      "firstName" : "#first-name",
+      "lastName" : "#last-name",
+      "emailAddress" : "#email",
+      "password" : "#password",
+      "passwordConfirm" : "#password-confirmation",
+      "markCheckbox" : "[type='checkbox']",
+      "submitBtn" : "button[type='submit']"
+  },
+
+  "Logout" : {
+      "logOutBtn" : "a[class='nav-link nav-buttons']"
+  }
+}
