@@ -1,5 +1,9 @@
 class RegisterPage {
 
+    get registerHeading() {
+        return cy.get('h1');
+    }
+
     get firstName() {
         return cy.get('#first-name')
     }
@@ -26,6 +30,10 @@ class RegisterPage {
 
     get submitBtn() {
         return cy.get('button[type="submit"]')
+    }
+
+    get errMessage() {
+        return cy.get('p[class="alert alert-danger"]')
     }
 
     register(name, lastName, email, password) {

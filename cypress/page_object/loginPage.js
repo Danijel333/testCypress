@@ -1,5 +1,9 @@
 class LoginPage {
 
+    get loginHeading(){
+        return cy.get('h1');
+    }
+
     get emailInput() {
         return cy.get('#email');
     }
@@ -10,6 +14,10 @@ class LoginPage {
 
     get submitBtn() {
         return cy.get('button[type="submit"]')
+    }
+
+    get errorMsg() {
+        return cy.get('p[class="alert alert-danger"]');
     }
 
     login(email, password) {
