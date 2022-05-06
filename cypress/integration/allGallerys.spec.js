@@ -8,7 +8,11 @@ import {
 describe('all galleries test', () => {
 
     beforeEach('visit all galeries page', () => {
-        cy.visit('/');
+        cy.loginViaBeckend()
+    })
+
+    it.only('visit', () => {
+        cy.visit('/create')
     })
 
     it('validate page', () => {
